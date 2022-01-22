@@ -1,0 +1,369 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: monospace;
+  overflow-x: hidden;
+}
+
+.navbar-collapse {
+  margin-top: 20px;
+}
+
+.nav {
+  margin-left: 350px;
+  font-size: 18px;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-item a:hover {
+  border-bottom: 2px solid #fff;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+  text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
+  z-index: 9999;
+}
+.navbar-toggler .navbar-toggler-icon {
+  border: none;
+}
+
+.navbar-toggler span .navbar-toggler-icon {
+  transition: all 0.15s;
+}
+
+.navbar-toggler span:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler span:nth-child(2),
+.navbar-toggler span:nth-child(4) {
+  transform: rotate(0);
+}
+.navbar-toggler span:nth-child(3) {
+  opacity: 1;
+}
+
+.bg-purple {
+  color: #710bc5;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 10rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+  background: linear-gradient(rgba(109, 15, 112, 0.562), rgba(0, 0, 0, 0.616));
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+/*HEADER-IMAGE*/
+
+.header-img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+  background-image: linear-gradient(
+      rgba(109, 15, 112, 0.562),
+      rgba(0, 0, 0, 0.616)
+    ),
+    url(../images/banner.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: right;
+  margin: 0px 0px 60px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 2px 2px 2px rgba(43, 42, 42, 0.767);
+  border-bottom-right-radius: 20px;
+  color: rgba(35, 4, 36, 0.164);
+}
+
+.head-text h3 {
+  margin-top: 190px;
+  font-size: 65px;
+}
+
+.header-img1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+  background-image: url(../images/slide-team.jpg);
+  width: 100%;
+  height: 500px;
+  background-position: right;
+  margin: 0px 0px 60px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 2px 2px 2px rgba(43, 42, 42, 0.767);
+  border-bottom-right-radius: 20px;
+  color: rgba(35, 4, 36, 0.164);
+}
+
+/*CONTACT-US*/
+.cust-att img {
+  width: 70px;
+  height: 70px;
+}
+
+.bg-gray {
+  background: rgb(238, 237, 237);
+  padding: 70px;
+}
+
+.bg-gray h5 {
+  padding: 10px;
+}
+
+.bg-camou {
+  background: rgba(3, 16, 41, 0.116);
+}
+
+.contact-section {
+  padding: 40px 15px 100px 15px;
+}
+
+.contact-section h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.side-section {
+  background-image: linear-gradient(to right, #530296fb, #8523d4, #b40850);
+  margin-top: 12px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+.glass .rounded-pill {
+  padding: 10px;
+}
+
+.btn {
+  transition: 0.5s;
+  margin: 1rem 0;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #8a1ce4, #710bc5, #7b15cf);
+  background-size: 200%;
+  box-shadow: 2px 2px 2px rgba(57, 4, 82, 0.548);
+  border: none;
+}
+
+.btn:hover {
+  background-position: right;
+  background-image: linear-gradient(to left, #0a0a0a, #7600d6, #030005);
+  box-shadow: 3px 3px 3px rgba(36, 36, 36, 0.39);
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.form-control {
+  padding: 10px;
+  background: rgba(241, 241, 241, 0.308);
+  color: #000;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.footer {
+  margin: 0;
+  padding: 20px 30px 10px 30px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .col-lg-3 {
+  margin: 30px 0px 20px 0px;
+}
+
+.footer h5 {
+  color: rgba(0, 0, 0, 0.747);
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.footer p {
+  color: rgba(0, 0, 0, 0.747);
+  font-weight: 500;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a p:hover {
+  color: #710bc5;
+}
+
+footer {
+  padding: 20px 30px 10px 30px;
+  background: rgb(247, 247, 247);
+  bottom: 0;
+  margin-bottom: -50px;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-img {
+    height: 400px;
+  }
+
+  .head-text h3 {
+    font-size: 45px;
+  }
+
+  .header-img1 {
+    height: 400px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-nav .nav-item a:hover {
+    background: #8f07ffc7;
+    border-radius: 50px;
+    border: none;
+    margin: 0px 10px 0px 10px;
+    transform: scale(1.03);
+    transition: all 0.2s ease-out;
+    z-index: 9999;
+  }
+
+  .navbar-collapse ul {
+    background: rgba(116, 9, 161, 0.438);
+    backdrop-filter: blur(40px);
+
+    opacity: 0.9;
+    filter: alpha(opacity=76);
+    display: block;
+    content: "";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    color: #000;
+  }
+
+  .navbar-collapse li {
+    margin-top: 20px;
+    overflow: hidden;
+    font-size: 25px;
+  }
+
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #393d41;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
